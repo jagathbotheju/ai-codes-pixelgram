@@ -30,6 +30,7 @@ import { cn } from "@/lib/utils";
 import { Label } from "./ui/label";
 import { Switch } from "./ui/switch";
 import { useTheme } from "next-themes";
+import { signOut } from "next-auth/react";
 
 const MoreDropdown = () => {
   const { theme, setTheme } = useTheme();
@@ -100,7 +101,7 @@ const MoreDropdown = () => {
                 <p>Switch Appearance</p>
               </DropdownMenuItem>
 
-              <DropdownMenuItem className="menuItem">
+              <DropdownMenuItem className="menuItem" onClick={() => signOut()}>
                 <LogOut size={20} />
                 <p>Logout</p>
               </DropdownMenuItem>

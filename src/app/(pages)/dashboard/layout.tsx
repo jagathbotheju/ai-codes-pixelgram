@@ -1,3 +1,4 @@
+import Header from "@/components/Header";
 import SideNav from "@/components/SideNav";
 
 export default function DashboardLayout({
@@ -11,8 +12,11 @@ export default function DashboardLayout({
         <SideNav />
       </div>
 
-      <div className="mx-auto mt-12 flex w-full max-w-7xl flex-1 flex-grow sm:p-6 md:mt-0 md:overflow-y-auto md:p-12">
-        {children}
+      <div className="flex flex-col w-full">
+        <Header />
+        <div className="mx-auto mt-12 flex w-full max-w-7xl flex-1 flex-grow sm:p-6 md:mt-0 md:overflow-y-auto md:p-12">
+          {children}
+        </div>
       </div>
     </div>
   );

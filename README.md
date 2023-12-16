@@ -1,5 +1,14 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+##Features
+
+- Next Auth with google and middleware
+- File upload to UploadThing
+- React Hook Form with shadcn/ui
+- separate schema file
+- sonner tost
+- using zod for client and server side validation
+
 ## Getting Started
 
 First, run the development server:
